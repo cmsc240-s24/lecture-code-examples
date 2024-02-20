@@ -12,7 +12,7 @@ int main()
     int x = 22;    // Set a breakpoint here.
     int y = 10;
 
-    cout << "x == " << x << ", y == " << y << endl;
+    cerr << "x == " << x << ", y == " << y << endl;
 
     int sum = add(x, y);
 
