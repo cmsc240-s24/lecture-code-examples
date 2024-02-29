@@ -8,6 +8,7 @@ double* calculate(int resultSize, int max)
 
     /* ... the results are calculated here using values ... */
 
+    delete[] values;
 
     return results;
 }
@@ -21,6 +22,7 @@ int main()
     }
 
     delete[] result;
+    
 
     return 0;
 }

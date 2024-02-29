@@ -5,6 +5,7 @@ int main()
 
     // Deallocate the memory
     delete[] ptr;  
+    ptr = nullptr;
 
     // 'ptr' now becomes a dangling pointer 
     // since it still holds the address of the deallocated memory

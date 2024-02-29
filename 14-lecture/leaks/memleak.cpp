@@ -8,6 +8,8 @@ int main()
     {
         arr[i] = i;
     }
+
+    delete[] arr;
       
     return 0;
 }

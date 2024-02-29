@@ -4,10 +4,8 @@ int main()
     int* buffer = new int[5]; 
 
     // This loop will overflow the buffer when i == 5
-    for (int i = 0; i <= 5; i++) 
-    {
-        buffer[i] = i;
-    }
+    buffer--;
+    *buffer = 10;
 
     delete[] buffer;  // Free the allocated memory
 

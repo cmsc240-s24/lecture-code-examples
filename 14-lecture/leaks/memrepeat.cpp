@@ -7,7 +7,7 @@ int main()
     for (int i = 0; i < 10; i++) 
     {
         // Allocate memory for an integer
-        ptr = new int;   
+        ptr = new int;
 
         // Assign the value of i to the allocated memory
         *ptr = i;            
