@@ -2,7 +2,7 @@
 using namespace std;
 
 Engine::Engine(string type, int horsepower) 
-    : type(type), horsepower(horsepower) 
+    : type{type}, horsepower{horsepower} 
 { }
 
 Engine::Engine(json jsonDoc)

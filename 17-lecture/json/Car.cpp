@@ -3,8 +3,8 @@ using namespace std;
 
 Car::Car(string make, string model, int year, string color,
          double price, string engineType, int horsepower) 
-    : make(make), model(model), year(year), 
-      color(color), price(price), engine{engineType, horsepower}
+    : make{make}, model{model}, year{year}, 
+      color{color}, price{price}, engine{engineType, horsepower}
 { }
 
 Car::Car(json jsonDoc)
@@ -33,3 +33,4 @@ void Car::fromJson(json jsonDoc)
   jsonDoc.at("Price").get_to(price);
   engine = Engine{jsonDoc.at("Engine")};
 }
+
