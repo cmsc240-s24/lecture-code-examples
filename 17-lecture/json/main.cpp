@@ -7,19 +7,15 @@ using namespace std;
 
 int main() 
 {
-    Car mustang{"Ford", "Mustang", 2004, "Red", 38999.42, "V8", 301};
+    
+    // Car mustang{"Ford", "Mustang", 2004, "Red", 38999.42, "V8", 301};
 
-    // Write JSON to a file.
-    ofstream outfile("mustang.json");
-    outfile << mustang.toJson().dump(INDENT_SPACES);
-    outfile.close();
+    // // Write JSON to a file.
+    // ofstream outfile("mustang.json");
+    // outfile << mustang.toJson().dump(INDENT_SPACES);
+    // outfile.close();
+    
 
-    return 0;
-}
-
-
-
-/*
     // Read JSON from a file.
     ifstream infile("mustang.json");
     json jsonFromFile = json::parse(infile);
@@ -28,4 +24,16 @@ int main()
     Car mustang{jsonFromFile};
 
     cout << mustang.toJson().dump(INDENT_SPACES) << endl;
+
+    return 0;
+}
+
+
+
+/*
+
+
+    
+
+    
 */
