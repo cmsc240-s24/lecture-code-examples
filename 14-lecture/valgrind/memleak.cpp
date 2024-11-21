@@ -8,7 +8,8 @@ int main()
     *ptr = 50;
 
     cout << "Contents of pointer == " << *ptr << endl;
-
+    // There should be a delete here.
+    delete ptr;
     ptr = new int; //<-- memory leak
 
     delete ptr;

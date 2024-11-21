@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int result = 10 * 24
+    int result = 10 * 24;
 
     cout << "Area = " << result << endl;
 

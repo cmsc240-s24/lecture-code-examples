@@ -13,9 +13,12 @@ int main()
         *ptr = i;            
 
         std::cout << *ptr << " " << std::endl;
+
+        delete ptr;
     }
 
-    delete ptr;
+    
+    
 
     return 0;
 }

@@ -37,11 +37,6 @@ int main()
         int result = area(length, width);
         cout << "Area == " << result << endl;
     }
-    catch (invalid_argument exception)
-    {
-        cerr << "Invalid Argument!" << endl;
-        exit(1);
-    }
     catch (overflow_error exception)
     {
         cerr << "Overflow!" << endl;

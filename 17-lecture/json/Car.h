@@ -13,8 +13,8 @@ public:
         double price, std::string engineType, int horsepower);
     Car(json jsonDoc);
     void drive();
-    json toJson();
-    void fromJson(json jsonDoc);
+    json toJson(); // Serialization 
+    void fromJson(json jsonDoc); // Deserialization
 private:
     std::string make;
     std::string model;

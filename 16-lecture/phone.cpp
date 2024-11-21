@@ -23,7 +23,11 @@ int main()
     getline(cin, phone);
 
     // Define a regular expression pattern for phone number validation
-    regex pattern{R"(   YOUR REGEX PATTERN HERE   )"};
+    // (NPA) NXX-XXXX
+    // NXX is the central office code, and it must not start with 0 or 1.
+    
+    cout << phone << endl;
+    regex pattern{R"(\(\d{3}\) [2-9]\d{2}-\d{4})"};
 
     if (regex_match(phone, pattern)) 
     {

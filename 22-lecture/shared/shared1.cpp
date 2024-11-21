@@ -6,7 +6,7 @@ void function(shared_ptr<int>& shared)
 {
     shared_ptr<int> second = shared;     // reference count: 2
     cout << *second << endl;
-}
+} // Leavig the scope of function, decrement the reference count
 
 int main() 
 {

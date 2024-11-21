@@ -5,4 +5,5 @@
 template <typename T>  
 T add(T a, T b);
 
+#include "functions.cpp"
 #endif

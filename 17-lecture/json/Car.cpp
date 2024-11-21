@@ -31,6 +31,8 @@ void Car::fromJson(json jsonDoc)
   jsonDoc.at("Year").get_to(year);
   jsonDoc.at("Color").get_to(color);
   jsonDoc.at("Price").get_to(price);
-  engine = Engine{jsonDoc.at("Engine")};
+  engine = Engine(jsonDoc.at("Engine"));
 }
+
+
 
