@@ -4,9 +4,11 @@
 using namespace std;
 using namespace crow;
 
-response handleHelloGetRequest() 
+response handleHelloGetRequest(request req) 
 {
-    string body = "Hello, world!";
+
+    string sessionId = req.headers("SessionId");
+    string body = "Hello, world! " + sessionId;
 
     // Return the integer HTTP response code, and the response body as a string.
     return response(200, body);
