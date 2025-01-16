@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+// Hello Main Function
 int main()
 {
     cout << "Please enter your first name (followed by 'enter'):" << endl;
